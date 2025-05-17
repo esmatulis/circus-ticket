@@ -40,9 +40,9 @@ h4 {
 	background-color: var(--color-primary);
 	color: var(--color-secondary);
 	width: 600px;
-	height: 200px;
-	/* display: grid; */
-	/* grid-template-columns: 106px calc(100% - 106px); */
+	height: 250px;
+	display: grid;
+	grid-template-columns: 106px calc(100% - 106px);
 	font-family: var(--font-body);
 }
 
@@ -102,11 +102,53 @@ h4 {
 
 .ticket-sub h3 {
     text-wrap: wrap;
+    text-align: center;
 }
 
 .ticket-main {
 display: grid;
-grid-template-columns: 23% 77%;    
+grid-template-columns: 23% 77%;  
+padding: 10px;  
+}
+
+.ticket-seat {
+    display: grid;
+    width: fit-content;
+	/* grid-template-areas:
+		"suba head"
+		"subb head"
+		"subc head"; */
+}
+/* .ticket-seat > .ticket-seat-box:nth-of-type(1) {
+	grid-area: suba;
+}
+.ticket-seat > .ticket-seat-box:nth-of-type(2) {
+	grid-area: subb;
+}
+.ticket-seat > .ticket-seat-box:nth-of-type(3) {
+	grid-area: subc;
+} */
+.ticket-seat > .ticket-seat-box {
+	writing-mode: vertical-rl;
+	/* text-orientation: sideways; */
+	text-align: center;
+}
+
+
+
+.ticket-seat > .ticket-seat-box p {
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 16px;
+	padding-right: 4px;
+	font-weight: 700;
+}
+.ticket-seat > .ticket-seat-box h4 {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 16px;
+	/* padding-top: 6px; */
+    /* letter-spacing: 3px; */
 }
 
 /*
@@ -115,6 +157,7 @@ grid-template-columns: 23% 77%;
 	display: grid;
 	grid-template-columns: 23% 77%;
 }
+
 .ticket-seat {
 	display: grid;
 	grid-template-areas:
