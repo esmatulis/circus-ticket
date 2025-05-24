@@ -207,7 +207,4 @@ h4 {
 
 #ticket-2 {
 	transform: rotate(-15deg);
-	position: absolute;
-	top: 200px;
-	z-index: 999;
 }	
