@@ -4,7 +4,7 @@
 	--color-primary: #f2f2f1;
 	--color-secondary: #010101;
 	--color-tertiary: #d1d1d1;
-	--color-bg: #263238;
+	--color-bg: #486472;
 	--font-heading: Arial, helvetica;
 	--font-body: "open sans", "Roboto", sans-serif;
 	--font-misc: "Oswald", "monospace", "courier";
@@ -43,6 +43,7 @@ h4 {
 	display: grid;
 	grid-template-columns: 250px calc(100% - 250px);
 	font-family: var(--font-body);
+	box-shadow: 2px 2px 10px rgba(86, 86, 86, 0.831);
 }
 
 .ticket-info {
@@ -203,3 +204,10 @@ h4 {
 	padding-top: 6px;
 	letter-spacing: 3px;
 }
+
+#ticket-2 {
+	transform: rotate(-15deg);
+	position: absolute;
+	top: 200px;
+	z-index: 999;
+}	
